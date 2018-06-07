@@ -18,3 +18,8 @@ body {
   background-color: #6441a4;
   border-color: #fff;
 }
+#sumcen {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+}
