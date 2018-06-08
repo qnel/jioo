@@ -8,11 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="libs/bootstrap/css/bootstrap.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/fontawesome-all.css" />
 </head>
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">PEWPEW</a>
+      <a class="navbar-brand" href="#"><img class="jiooimg" src="img/lologo.png">jioo</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -21,34 +22,30 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Главная
+            <a class="nav-link" href="index.html">Главная
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Чемпионы</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Поиск</a>
+            <a class="nav-link" href="champions.html">Чемпионы</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Введите имя" aria-label="Search">
-          <button class="btn my-2 my-sm-0 knopkato4no" type="submit">Поиск</button>
-        </form>
       </div>
     </div>
   </nav>
 </header>
 
-<body>
-  <section id="sumcen">
+<body class="indexbody">
+  <section id="pewpewpew">
     <div class="container">
-      <form>
+      <form class="sumcen">
         <div class="form-group">
-          <div class="row">
-            <div class="col-10">
+          <div class="row jioosrc">
+            <div class="col-11 searchbtn">
               <input type="text" class="form-control" placeholder="Введите имя">
+              <button type="submit" class="btn jioobtn">
+                <i class="fas fa-search"></i>
+              </button>
             </div>
             <div class="col-1">
               <select class="form-control">
@@ -58,12 +55,7 @@
                 <option>na</option>
                 <option>jp</option>
               </select>
-            </div>
-            <div class="col-1">
-              <button type="submit" class="btn btn-primory">
-                <i class="fas fa-search"></i>
-              </button>
-            </div>
+            </div> 
           </div>
         </div>
       </form>

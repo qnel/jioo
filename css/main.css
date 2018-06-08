@@ -2,11 +2,14 @@
   max-width: 1170px;
   margin: 0 auto;
 }
-body {
+.indexbody {
   background-color: #17141f;
+  background-image: url("../img/star.jpg");
+  background-size: cover;
 }
 .custom-navbar {
   background-color: #392e5c;
+  position: static;
 }
 .knopkato4no {
   color: #6441a4;
@@ -18,8 +21,39 @@ body {
   background-color: #6441a4;
   border-color: #fff;
 }
-#sumcen {
-  position: absolute;
-  top: 50%;
-  transform: translateX(-50%);
+.sumcen {
+  margin-top: 35%;
+}
+.jioobtn {
+position: absolute;
+right: 0;
+top: 0;
+}
+.searchbtn {
+  position: relative;
+}
+.jioosrc {
+  background-color: rgba(255,255,255,.8);
+  height: 80px;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+.jiooimg {
+  width: 25px;
+}
+body {
+  background-color: #17141f;
+}
+.champlink,
+.champimg {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.champlink:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.champmodal {
+  max-width: 1215px;
 }
