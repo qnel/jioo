@@ -57,3 +57,14 @@ body {
 .champmodal {
   max-width: 1215px;
 }
+.proflogo {
+  width: 100px;
+  margin: 25px;
+}
+.proflogmain {
+  background-image: url(../img/char/Varus_0.jpg);
+  background-size: contain;
+  Background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+}
