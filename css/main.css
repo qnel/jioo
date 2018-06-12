@@ -125,3 +125,15 @@ body {
 .sumimg {
   margin: 10px;
 }
+.jiootals {
+  color: #fff;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #6441a4;
+}
+.jiootals:hover {
+  color: #6441a4;
+}
+.taltext {
+  color: #fff;
+}

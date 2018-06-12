@@ -2,44 +2,529 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>jioo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="libs/bootstrap/css/bootstrap.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="css/fontawesome-all.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jioo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="libs/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/fontawesome-all.css" />
 </head>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img class="jiooimg" src="img/lologo.png">jioo</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="jiooimg" src="img/lologo.png">jioo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Главная
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="champions.html">Чемпионы</a>
-          </li>
-          <li>
-            <a class="nav-link" href="spells.html">Заклинания</a>
-          </li>
-          <li>
-            <a class="nav-link" href="talents.html">Таланты</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Главная
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="champions.html">Чемпионы</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="spells.html">Заклинания</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="talents.html">Таланты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
+
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link jiootals active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home"
+                        aria-selected="true">
+                        <img src="img/runes/Precision_icon.png">Точность</a>
+                    <a class="nav-link jiootals" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false">
+                        <img src="img/runes/Domination_icon.png">Доминирование</a>
+                    <a class="nav-link jiootals" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">
+                        <img src="img/runes/Sorcery_icon.png">Колдовство</a>
+                    <a class="nav-link jiootals" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+                        aria-selected="false">
+                        <img src="img/runes/Resolve_icon.png">Храбрость</a>
+                    <a class="nav-link jiootals" id="v-pills-jioo-tab" data-toggle="pill" href="#v-pills-jioo" role="tab" aria-controls="v-pills-jioo"
+                        aria-selected="false">
+                        <img src="img/runes/Inspiration_icon.png">Вдохновение</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Press_the_Attack_rune.png">Решительное наступление</p>
+                                        <p class="taltext">Атаковав чемпиона 3 раза подряд, вы ослабляете его и наносите дополнительный урон.
+                                            Ослабленные враги получают больше урона от любых источников.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Lethal_Tempo_rune.png">Смертельный темп</p>
+                                        <p class="taltext">Спустя 1.5 секунды после нанесения урона чемпиону ваша скорость атаки значительно
+                                            увеличивается. Позволяет вам временно превысить ограничение на максимальную скорость
+                                            атаки.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Fleet_Footwork_rune.png">Искусное лавирование</p>
+                                        <p class="taltext">Во время передвижения и атак накапливаются заряды энергии. Когда их станет 100, ваша
+                                            следующая атака восстановит вам здоровье и увеличит скорость передвижения.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Conqueror_rune.png">Завоеватель</p>
+                                        <p class="taltext">После 4 секунд в бою ваша первая атака против вражеского чемпиона увеличивает вашу
+                                            силу атаки и превращает часть вашего урона в чистый.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Overheal_rune.png">Сверхлечение</p>
+                                        <p class="taltext">Избыточное лечение превращается в щит.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Triumph_rune.png">Триумф</p>
+                                        <p class="taltext">При добивании восстанавливает 12% от недостающего здоровья и дополнительно дает 20
+                                            золота.
+                                        </p>
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="taltext">
+                                            <img src="img/runes/Presence_of_Mind_rune.png">Присутствие духа</p>
+                                        <p class="taltext">Добивания восстанавливают 20% от вашего максимального запаса маны и компенсируют
+                                            10% от времени перезарядки вашего абсолютного умения.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Legend-_Alacrity_rune.png">Легенда: Рвение</p>
+                                        <p class="taltext">Добивания врагов навсегда увеличивают вашу скорость атаки.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Legend-_Tenacity_rune.png">Легенда: Стойкость</p>
+                                        <p class="taltext">Добивания врагов навсегда увеличивают вашу стойкость.</p>
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="taltext">
+                                            <img src="img/runes/Legend-_Bloodline_rune.png">Легенда: Родословная</p>
+                                        <p class="taltext">Добивания врагов навсегда увеличивают ваш вампиризм.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Coup_de_Grace_rune.png">Удар милосердия</p>
+                                        <p class="taltext">Вы наносите больше урона чемпионам с низким уровнем здоровья.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Cut_Down_rune.png">Реванш</p>
+                                        <p class="taltext">Вы наносите дополнительный урон чемпионам, у которых больше максимального здоровья,
+                                            чем у вас.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Last_Stand_rune.png">Последний рубеж</p>
+                                        <p class="taltext">Ваши атаки наносят чемпионам дополнительный урон, когда у вас мало здоровья.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Electrocute_rune.png">Казнь электричеством</p>
+                                        <p class="taltext">Наносит дополнительный адаптивный урон, если вы поражаете врага 3 отдельными атаками
+                                            или умениями в течении 3 секунд.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Predator_rune.png">Хищник</p>
+                                        <p class="taltext">У ваших ботинок появляется активный эффект, который значительно увеличивает скорость
+                                            передвижения, а также усиливает вашу следующую атаку или умение, благодаря чему
+                                            они наносят дополнительный адаптивный урон.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Dark_Harvest_rune.png">Темная жатва</p>
+                                        <p class="taltext">Чемпионы, большие миньоны и большие монстры оставляют после смерти эссенцию души.
+                                            Коснитесь души, чтобы поглотить ее и нанести дополнительный адаптивный урон во
+                                            время следующей автоатаки в зависимости от общего количества собранной эссенции
+                                            души.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Hail_of_Blades_rune.png">Град клинков</p>
+                                        <p class="taltext">Значительно увеличивает скорость атаки первых 3 автоатак против вражеских чемпионов.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Cheap_Shot_rune.png">Грязный прием</p>
+                                        <p class="taltext">Наносит дополнительный чистый урон вражеским чемпионам, которые ограничены в передвижении
+                                            или выполнении действий.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Taste_of_Blood_rune.png">Вкус крови</p>
+                                        <p class="taltext">Восстанавливает здоровье, когда вы наносите урон вражескому чемпиону.</p>
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="taltext">
+                                            <img src="img/runes/Sudden_Impact_rune.png">Внезапный удар</p>
+                                        <p class="taltext">После прыжка, рывка, телепортации или выхода из скрытности ваши смертоносность и
+                                            магическое пробивание ненадолго увеличивается.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Zombie_Ward_rune.png">Тотем-зомби</p>
+                                        <p class="taltext">Если вы уничтожаете тотем, на его месте появляется ваш тотем-зомби. Кроме того, по
+                                            окончании действия ваших тотемов они восстают в виде тотемов-зомби.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Ghost_Poro_rune.png">Призрачный поро</p>
+                                        <p class="taltext">Когда вы входите в кусты, в них появляется поро. Он остается там, обеспечивая вам
+                                            обзор.
+                                        </p>
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="taltext">
+                                            <img src="img/runes/Eyeball_Collection_rune.png">Коллекция глаз</p>
+                                        <p class="taltext">Вы получаете глаза за добивания чемпионов и тотемов. За каждый собранный глаз вы
+                                            навсегда получаете силу атаки или силу умений. После сбора полной коллекции эти
+                                            показатели увеличиваются еще сильнее.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Ravenous_Hunter_rune.png">Ненасытный охотник</p>
+                                        <p class="taltext">Уникальные добивания дают постоянное лечение при нанесении урона умениями.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Ingenious_Hunter_rune.png">Изобретательный охотник</p>
+                                        <p class="taltext">Уникальные добивания навсегда сокращают перезарядку активных предметов.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Relentless_Hunter_rune.png">Беспощадный охотник</p>
+                                        <p class="taltext">Уникальные добивания навсегда увеличивают скорость передвижения вне боя.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Ultimate_Hunter_rune.png">Абсолютный охотник</p>
+                                        <p class="taltext">Уникальные добивания навсегда сокращают перезарядку вашего абсолютного умения.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Summon_Aery_rune.png">Призыв пушинки</p>
+                                        <p class="taltext">Ваши автоатаки и умения направляют Пушинку к цели: она наносит урон врагам или накладывает
+                                            щит на союзников.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Arcane_Comet_rune.png">Магическая комета</p>
+                                        <p class="taltext">Когда вы наносите урон умением чемпиону, туда, где он находится, падает комета, которая
+                                            наносит урон.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Phase_Rush_rune.png">Фазовый рывок</p>
+                                        <p class="taltext">Поражая вражеского чемпиона 3 отдельными атаками или умениями, вы кратковременно
+                                            увеличиваете свою скорость передвижения.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Nullifying_Orb_rune.png">Сфера уничтожения</p>
+                                        <p class="taltext">Если после получения магического урона у вас остается мало здоровья, вы получаете
+                                            щит от магического урона.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Manaflow_Band_rune.png">Поток маны</p>
+                                        <p class="taltext">Поражение вражеского чемпиона умением навсегда увеличивает ваш максимальный запас
+                                            маны на 25 (вплоть до 250 маны). После получения 250 дополнительной маны восстанавливает
+                                            1% от вашей недостающей маны каждые 5 секунд.</p>
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="taltext">
+                                            <img src="img/runes/Nimbus_Cloak_rune.png">Сияющий плащ</p>
+                                        <p class="taltext">Вскоре после применения абсолютного умения ваша скорость передвижения увеличивается
+                                            на 2.5 секунд (эффект ослабевает со временем), и вы получаете способность проходить
+                                            сквозь бойцов.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Transcendence_rune.png">Превосходство</p>
+                                        <p class="taltext">Увеличивает сокращение перезарядки на 10%, когда вы достигаете 10 уровня. Избыточное
+                                            сокращение перезарядки переходит в силу умений или силу атаки.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Celerity_rune.png">Быстрота</p>
+                                        <p class="taltext">Ваша скорость передвижения увеличивается на 3%. Ваша сила умений или сила атаки увеличивается
+                                            в зависимости от дополнительной скорости передвижения.
+                                        </p>
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="taltext">
+                                            <img src="img/runes/Absolute_Focus_rune.png">Полная сосредоточенность</p>
+                                        <p class="taltext">Когда уровень вашего здоровья выше 70%, вы наносите дополнительный адаптивный урон.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Scorch_rune.png">Ожог</p>
+                                        <p class="taltext">Каждые 20 секунд ваше первое попадание умением обжигает чемпионов.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Waterwalking_rune.png">Хождение по воде</p>
+                                        <p class="taltext">Увеличивает скорость передвижения, а также силу умений или силу атаки, когда вы находитесь
+                                            на реке.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Gathering_Storm_rune.png">Надвигающаяся буря</p>
+                                        <p class="taltext">По ходу игры вы получаете растущие прибавки к силе атаки или силе умений.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Grasp_of_the_Undying_rune.png">Хватка нежити</p>
+                                        <p class="taltext">Каждые 4 секунды ваша следующая автоатака против чемпиона наносит дополнительный
+                                            магический урон, а также восстанавливает вам здоровье и навсегда увеличивает
+                                            ваш запас здоровья.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Aftershock_rune.png">Дрожь земли</p>
+                                        <p class="taltext">После обездвиживания вражеского чемпиона ваши защитные показатели увеличивается,
+                                            а затем вы наносите взрывной магический урон вокруг себя.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Guardian_rune.png">Страж</p>
+                                        <p class="taltext">Вы защищаете ближайших союзников или союзников, к которым применяете заклинания.
+                                            Если вы или защищенный союзник получаете урон, вы оба ускоряетесь и получаете
+                                            щит.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Demolish_rune.png">Снос</p>
+                                        <p class="taltext">Вы готовите мощную атаку против башни, когда находитесь поблизости от нее.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Font_of_Life_rune.png">Живой источник</p>
+                                        <p class="taltext">Ограничивая передвижение вражеский чемпионов, вы помечаете их. Когда ваши союзники
+                                            атакуют помеченных чемпионов, они восстанавливают себе здоровье.</p>
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="taltext">
+                                            <img src="img/runes/Bone_Plating_rune.png">Костяная пластина</p>
+                                        <p class="taltext">После получения урона от вражеского чемпиона его следующие умения или автоатаки (до
+                                            3) наносят вам на 15-40 меньше урона.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Conditioning_rune.png">Накопление</p>
+                                        <p class="taltext">После 10 минуты вы получается 8 брони и 8 сопротивления магии; кроме того, ваши броня
+                                            и сопротивление магии увеличивается на 5%.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Second_Wind_rune.png">Второе дыхание</p>
+                                        <p class="taltext">При получении урона от вражеского чемпиона вы восстанавливаете себе здоровье в течении
+                                            некоторого времени.
+                                        </p>
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="taltext">
+                                            <img src="img/runes/Chrysalis_rune.png">Куколка</p>
+                                        <p class="taltext">С самого начала игры ваш запас здоровья увеличен на 50. Приняв участие в нескольких
+                                            убийствах (4), вы поглощаете это здоровье и получаете 9 силы атаки или 15 силы
+                                            умений.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Overgrowth_rune.png">Разрастание</p>
+                                        <p class="taltext">Навсегда увеличивает максимальный запас здоровья, когда рядом умирают миньоны или
+                                            монстры.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Revitalize_rune.png">Оживление</p>
+                                        <p class="taltext">Сила лечения и прочность щитов, которые вы накладываете или получаете, увеличиваются
+                                            на 5%. Если у цели низкий уровень здоровья, сила эффектов увеличивается еще на
+                                            10%.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Unflinching_rune.png">Неустрашимость</p>
+                                        <p class="taltext">После использования заклинания призывателя ваши стойкость и сопротивление замедлению
+                                            ненадолго увеличиваются. Кроме того, ваши стойкость и сопротивления замедления
+                                            увеличиваются за каждое заклинание призывателя на перезарядке.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-jioo" role="tabpanel" aria-labelledby="v-pills-jioo-tab">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Glacial_Augment_rune.png">Ледяной нарост</p>
+                                        <p class="taltext">Ваша первая атака против вражеского чемпиона замедляет его (на каждого чемпиона отдельная
+                                            перезарядка). Замедляя чемпионов с помощью активных предметов, вы выпускаете
+                                            в них ледяной луч, который создает вокруг них область замедления.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Kleptomancy_rune.png">Клептомантия</p>
+                                        <p class="taltext">После применения умения ваша следующая атака против чемпиона дает вам золото. Кроме
+                                            того, вы можете получить расходуемый предмет.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Unsealed_Spellbook_rune.png">Раскрытая книга заклинаний</p>
+                                        <p class="taltext">Вы заменяете заклинание призывателя вне боя. Выбирая уникальные заклинания призывателя,
+                                            вы увеличиваете частоту, с которой можно осуществлять последующие замены.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Hextech_Flashtraption_rune.png">Хекстековый скачок</p>
+                                        <p class="taltext">Когда скачок находится на перезарядке, его заменяет хекс-скачок. Хекс-скачок: после
+                                            подготовки перемещает вас на новое место.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Magical_Footwear_rune.png">Магическая обувь</p>
+                                        <p class="taltext">Вы получаете бесплатные ботинки на 10 минуте, но не можете купить ботинки до этого
+                                            момента. Каждое добивание сокращает время ожидания ботинок на 30 секунд.</p>
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="taltext">
+                                            <img src="img/runes/Perfect_Timing_rune.png">Самое время</p>
+                                        <p class="taltext">Дает бесплатный секундомер. Секундомер может единожды наложить на вас эффект стазиса.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Future's_Market_rune.png">Рынок будущего</p>
+                                        <p class="taltext">Вы можете покупать предметы в долг.</p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Minion_Dematerializer_rune.png">Дезинтегратор миньонов</p>
+                                        <p class="taltext">Вы начинаете игру с предметом дезинтегратор миньонов с 6 зарядами. Убивая миньонов
+                                            этим предметом, вы навсегда получаете прибавку к урону против миньонов этого
+                                            типа.
+                                        </p>
+                                    </div>
+                                    <div class="mb-5">
+                                        <p class="taltext">
+                                            <img src="img/runes/Biscuit_Delivery_rune.png">Доставка печенья</p>
+                                        <p class="taltext">Вы получаете бесплатную печеньку каждые 3 минуты вплоть до 12 минуты. При использовании
+                                            печеньки вы навсегда увеличиваете свой максимальный запас маны, а также восстанавливаете
+                                            здоровье и ману.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Cosmic_Insight_rune.png">Космическое знание</p>
+                                        <p class="taltext">+5% сокращение перезарядки, максимального сокращение перезарядки, сокращения перезарядки
+                                            заклинаний призывателя, сокращения перезарядки предметов.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Approach_Velocity_rune.png">Скорость сближения</p>
+                                        <p class="taltext">Увеличивает скорость передвижения при перемещении в сторону союзных чемпионов, у
+                                            которых ограничено передвижение, или вражеских чемпионов, передвижение которых
+                                            ограничили вы.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="taltext">
+                                            <img src="img/runes/Time_Warp_Tonic_rune.png">Тоник искривления времени</p>
+                                        <p class="taltext">Увеличивает продолжительность действия ваших зелий, печенек и элексиров на 20%. Во
+                                            время действия их эффектов ваша скорость передвижения увеличивается на 5%.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
